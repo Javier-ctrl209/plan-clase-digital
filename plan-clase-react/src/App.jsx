@@ -1,7 +1,10 @@
 
+import { motion } from "framer-motion";
+
 import HeaderClase from "./components/HeaderClase";
 import ObjetivosCard from "./components/ObjetivosCard";
 import ActividadItem from "./components/ActividadItem";
+
 import "./App.css";
 import "./index.css";
 
@@ -21,7 +24,13 @@ function App() {
         />
 
         <section className="seccion-actividades">
-          <h2>Actividades de aprendizaje</h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -15 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Actividades de aprendizaje
+          </motion.h2>
 
           <ActividadItem
             actividad="Actividad 1: Conocer las fórmulas"
@@ -40,9 +49,14 @@ function App() {
         </section>
       </main>
 
-      <footer className="pie-clase">
+      <motion.footer
+        className="pie-clase"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, delay: 0.3 }}
+      >
         <p>Plan de Clase Digital Interactivo | Área de Computación</p>
-      </footer>
+      </motion.footer>
     </div>
   );
 }
