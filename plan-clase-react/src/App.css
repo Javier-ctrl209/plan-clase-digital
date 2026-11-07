@@ -155,3 +155,51 @@
     width: 100%;
   }
 }
+
+/* Actividades obtenidas desde NocoDB */
+
+.lista-actividades-nocodb {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.tarjeta-actividad-nocodb {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #16a34a;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 4px 12px #0000000d;
+  transition: box-shadow 0.3s ease;
+}
+
+.tarjeta-actividad-nocodb:hover {
+  box-shadow: 0 8px 18px #00000018;
+}
+
+.tarjeta-actividad-nocodb h3 {
+  color: #166534;
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.duracion-actividad {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.tarjeta-actividad-nocodb p {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}

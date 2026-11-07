@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import HeaderClase from "./components/HeaderClase";
 import ObjetivosCard from "./components/ObjetivosCard";
 import ActividadItem from "./components/ActividadItem";
+import ListaActividades from "./components/ListaActividades";
 
 import "./App.css";
 import "./index.css";
@@ -47,6 +48,7 @@ function App() {
             descripcion="Utilizar MAX y MIN para identificar valores mayores y menores."
           />
         </section>
+        <ListaActividades />
       </main>
 
       <motion.footer
